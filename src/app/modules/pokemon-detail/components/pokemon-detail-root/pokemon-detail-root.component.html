@@ -1,0 +1,48 @@
+<app-pokedex-header></app-pokedex-header>
+
+
+<app-details-skeleton *ngIf="isLoading"></app-details-skeleton>
+
+
+<div class="content-holder" *ngIf="isLoading == false">
+  <div class="card-container">
+    <div class="image-container">
+      <img
+      class="image"
+        src="{{ pokemon.sprites.other.dream_world.front_default }}"
+        alt=""
+        srcset=""
+      />
+    </div>
+    <div>
+      <h1 class="text-title-pokemon">
+        {{
+          pokemon.name[0].toUpperCase() + pokemon.name.substr(1).toLowerCase()
+        }}
+      </h1>
+    </div>
+    <div><h2 class="text-title-description">Estatísticas</h2></div>
+
+    <ol>
+      <li *ngFor="let value of pokemon.stats">
+        {{ value.stat.name }}
+
+        <strong>
+          {{ value.base_stat }}
+        </strong>
+      </li>
+    </ol>
+
+    <div class="button-container">
+      <button class="button" (click)="onClick()">Voltar</button>
+    </div>
+  </div>
+
+  <img
+    src="assets/error.png"
+    alt="Deu erro na mostragem do pokemon"
+    *ngIf="erro == true"
+  />
+</div>
+
+

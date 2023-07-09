@@ -1,0 +1,25 @@
+
+<app-pokedex-header></app-pokedex-header>
+<app-pokemon-search-root></app-pokemon-search-root>
+
+<div class="skeleton-list-container" *ngIf="isLoading">
+  <app-card-skeleton></app-card-skeleton>
+  <app-card-skeleton></app-card-skeleton>
+  <app-card-skeleton></app-card-skeleton>
+  <app-card-skeleton></app-card-skeleton>
+  <app-card-skeleton></app-card-skeleton>
+  <app-card-skeleton></app-card-skeleton>
+  <app-card-skeleton></app-card-skeleton>
+  <app-card-skeleton></app-card-skeleton>
+  <app-card-skeleton></app-card-skeleton>
+  <app-card-skeleton></app-card-skeleton>
+</div>
+
+
+
+<div class="pokemon-list-container" *ngIf="!isLoading">
+  <div class="pokemon-card-container" *ngFor="let pokemon of pokemonList" >
+    <app-pokemon-card-root (click)="onCardClick(pokemonList.indexOf(pokemon) + 1)" [pokemon]="pokemon" ></app-pokemon-card-root>
+  </div>
+</div>
+

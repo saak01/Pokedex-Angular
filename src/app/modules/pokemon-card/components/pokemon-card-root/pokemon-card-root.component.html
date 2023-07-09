@@ -1,0 +1,11 @@
+<div class="card-container">
+  <div class="card-content">
+    <div class="info-content-container">
+      <p class="pokemon-name">{{pokemon.name[0].toUpperCase() + pokemon.name.substr(1).toLowerCase()}}</p>
+      <div class="pokemon-type-container" *ngFor="let type of pokemon.types">{{type.type.name}}</div>
+    </div>
+    <div class="pokemon-image-container">
+      <div class="pokemon-image-holder"><img src={{pokemon.sprites.front_default}} alt="" srcset="" height="150px"></div>
+    </div>
+  </div>
+</div>
