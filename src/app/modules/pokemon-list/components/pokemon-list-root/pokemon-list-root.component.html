@@ -1,6 +1,9 @@
 
 <app-pokedex-header></app-pokedex-header>
-<app-pokemon-search-root></app-pokemon-search-root>
+
+<app-pokemon-search-root (emmitSearch)="getSearch($event)" ></app-pokemon-search-root>
+
+
 
 <div class="skeleton-list-container" *ngIf="isLoading">
   <app-card-skeleton></app-card-skeleton>
@@ -23,3 +26,7 @@
   </div>
 </div>
 
+
+<div *ngIf="pokemonList.length == 0">
+  <img src="../../../../../assets/error.png" width="100%" alt="" srcset="">
+</div>

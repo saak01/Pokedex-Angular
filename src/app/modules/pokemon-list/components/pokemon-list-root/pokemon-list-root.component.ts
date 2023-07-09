@@ -11,10 +11,24 @@ export class PokemonListRootComponent {
 
   constructor(private pokemonService: PokemonService, private router: Router) { }
   @Input() pokemonList :any[] = [];
+  @Input() getAllPokemons:any[] = [];
+
   @Input() isLoading: boolean = true;
 
   onCardClick(index: number) {
     this.router.navigate(['/pokemon', index]);
   }
 
+  public getSearch(value:string){
+    this.pokemonList = this.getAllPokemons;
+    if(value != ''){
+      const filter = this.pokemonList.filter((res:any) => {
+        return !res.name.indexOf(value.toLowerCase());})
+        this.pokemonList = filter;
+    }
+    else{
+      this.pokemonList = this.getAllPokemons;
+    }
+
+  }
 }

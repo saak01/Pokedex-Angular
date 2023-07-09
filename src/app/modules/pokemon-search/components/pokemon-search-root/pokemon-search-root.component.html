@@ -1,4 +1,4 @@
 <form class="input-container">
-  <input class="input-holder" type="text" placeholder="Buscar Pokemons">
+  <input class="input-holder" #input (keyup)="search(input.value)" type="text" placeholder="Buscar Pokemons">
   <img src="../../../../../assets/icons/search.svg" alt="Icon" srcset="">
 </form>
