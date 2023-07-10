@@ -1,14 +1,14 @@
-<app-pokedex-header></app-pokedex-header>
-
+<div (click)="onClick()">
+  <app-pokedex-header style="margin: 0; padding: 0;"></app-pokedex-header>
+</div>
 
 <app-details-skeleton *ngIf="isLoading"></app-details-skeleton>
-
 
 <div class="content-holder" *ngIf="isLoading == false">
   <div class="card-container">
     <div class="image-container">
       <img
-      class="image"
+        class="image"
         src="{{ pokemon.sprites.other.dream_world.front_default }}"
         alt=""
         srcset=""
@@ -44,5 +44,3 @@
     *ngIf="erro == true"
   />
 </div>
-
-

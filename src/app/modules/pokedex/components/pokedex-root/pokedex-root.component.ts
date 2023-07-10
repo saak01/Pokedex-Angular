@@ -10,6 +10,7 @@ import { PokemonService } from '../../services/pokemons.service';
 export class PokedexRootComponent implements OnInit {
   pokemonList: any[] = [];
   isLoading: boolean = true;
+  error: boolean = false;
   constructor(private pokemonApi: PokemonService){}
 
   ngOnInit(): void {
@@ -21,6 +22,7 @@ export class PokedexRootComponent implements OnInit {
     .catch((err) => {
       console.log(err);
       this.isLoading = false;
+      this.error = true;
     })
   }
 

@@ -12,7 +12,7 @@ export class PokemonListRootComponent {
   constructor(private pokemonService: PokemonService, private router: Router) { }
   @Input() pokemonList :any[] = [];
   @Input() getAllPokemons:any[] = [];
-
+  @Input() error:boolean = false;
   @Input() isLoading: boolean = true;
 
   onCardClick(index: number) {

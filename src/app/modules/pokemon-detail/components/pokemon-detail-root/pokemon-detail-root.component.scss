@@ -6,9 +6,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  height: 100%;
 }
 
 .card-container{
+  margin: 30px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

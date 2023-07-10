@@ -5,7 +5,7 @@
 
 
 
-<div class="skeleton-list-container" *ngIf="isLoading">
+<div class="skeleton-list-container" *ngIf="isLoading && error == false">
   <app-card-skeleton></app-card-skeleton>
   <app-card-skeleton></app-card-skeleton>
   <app-card-skeleton></app-card-skeleton>
@@ -22,11 +22,15 @@
 
 <div class="pokemon-list-container" *ngIf="!isLoading">
   <div class="pokemon-card-container" *ngFor="let pokemon of pokemonList" >
-    <app-pokemon-card-root (click)="onCardClick(pokemonList.indexOf(pokemon) + 1)" [pokemon]="pokemon" ></app-pokemon-card-root>
+    <app-pokemon-card-root (click)="onCardClick(getAllPokemons.indexOf(pokemon) + 1)" [pokemon]="pokemon" ></app-pokemon-card-root>
   </div>
 </div>
 
 
-<div *ngIf="pokemonList.length == 0">
+<div *ngIf="pokemonList.length == 0 && isLoading == false && error == false">
+  <img src="../../../../../assets/not-find-pokemon.png" width="100%" alt="" srcset="">
+</div>
+
+<div *ngIf="error && isLoading == false">
   <img src="../../../../../assets/error.png" width="100%" alt="" srcset="">
 </div>
