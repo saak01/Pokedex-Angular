@@ -18,6 +18,8 @@ export class PokedexRootComponent implements OnInit {
     .then(data => {
       this.pokemonList = data;
       this.isLoading = false;
+      this.error = false;
+
     })
     .catch((err) => {
       console.log(err);
