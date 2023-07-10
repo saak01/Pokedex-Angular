@@ -14,8 +14,8 @@ O "Pokedex" é um aplicativo que foi desenvolvido em duas versões: uma em Angul
 
 <p>Com o "Pokedex ", tenho como objetivo proporcionar uma experiência envolvente para os fãs de Pokémons. Você poderá explorar uma vasta coleção de Pokémons, aprender sobre suas estatísticas. Espero que esse aplicativo traga um pouco da alegria e nostalgia que sentimos ao nos envolvermos com o incrível mundo dos Pokémons.</p>
 
-<img align="center" alt="Pokedex App" height="600" width="1280" src="https://i.imgur.com/BmfERz3.png">
-<img align="center" alt="Pokedex App" height="600" width="1280" src="https://i.imgur.com/4O0q588.png">
+<img align="center" alt="Pokedex App" height="500" width="1280" src="https://i.imgur.com/BmfERz3.png">
+<img align="center" alt="Pokedex App" height="500" width="1280" src="https://i.imgur.com/4O0q588.png">
 
 
 <hr>
