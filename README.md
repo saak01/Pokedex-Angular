@@ -54,6 +54,3 @@ npm install -g @angular/cli
   <li>Se desejar aprender mais sobre o desenvolvimento de aplicativos Angular, recomendamos a <a href="https://angular.io/tutorial">documentação oficial do Angular</a> e o <a href="https://angular.io/guide/quickstart">guia de início rápido do Angular</a>.</li>
   <li>Para obter ajuda adicional sobre desenvolvimento Angular, você pode visitar a <a href="https://angular.io/docs">documentação online</a>, que oferece tutoriais, amostras e uma referência completa da API.</li>
 </ul>
-
-
-Certifique-se de substituir as informações relevantes, como o nome do aplicativo, as imagens e os URLs dos seus repositórios e das imagens do aplicativo. Além disso, adicione qualquer informação adicional que você julgar relevante para o README.
