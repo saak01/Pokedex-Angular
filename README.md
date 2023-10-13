@@ -35,7 +35,7 @@ npm install -g @angular/cli
 <hr>
 
 <h3>Clone o Repositório</h3>
-<pre><code>git clone https://github.com/seu-usuario/pokedex-app.git</code></pre>
+<pre><code>git clone https://github.com/saak01/Pokedex-Angular.git</code></pre>
 <h3>Atualize as Dependências</h3>
 <p>No diretório raiz do projeto, execute o seguinte comando para obter todas as dependências necessárias:</p>
 
